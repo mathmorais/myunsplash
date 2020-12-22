@@ -10,10 +10,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
-      Demo
-    </a>
-    <span> | </span>
     <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
       Challenge
     </a>
