@@ -7,8 +7,7 @@
     "client_init": "npm start --prefix client",
     "server_init": "node server.js",
     "dev_init": "concurrently \"npm run server_init\" \"npm run client_init\"",
-    "postinstall": "npm install --prefix client",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "postinstall": "npm install --prefix client"
   },
   "keywords": [],
   "author": "",
