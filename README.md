@@ -1,10 +1,4 @@
 <div align="center">
-<img alt="licence-badge-mit" src="https://img.shields.io/static/v1?label=licence&message=MIT&color=blue">
-<img alt="licence-badge-node" src="https://img.shields.io/static/v1?label=node&message=v14.15.3&color=green">
-<img alt="licence-badge-npm" src="https://img.shields.io/static/v1?label=npm&message=v6.14.9&color=green">
-</div>
-
-<div align="center">
 <img height=50 src="./images/my_unsplash_logo.svg">
 </div>
 
@@ -24,6 +18,12 @@
       Challenge
     </a>
   </h3>
+</div>
+
+<div align="center">
+<img alt="licence-badge-mit" src="https://img.shields.io/static/v1?label=licence&message=MIT&color=blue">
+<img alt="licence-badge-node" src="https://img.shields.io/static/v1?label=node&message=v14.15.3&color=green">
+<img alt="licence-badge-npm" src="https://img.shields.io/static/v1?label=npm&message=v6.14.9&color=green">
 </div>
 
 ## 📝 Table of Contents
