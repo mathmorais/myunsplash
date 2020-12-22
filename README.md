@@ -7,8 +7,6 @@
 ">
 </div>
 
-#
-
 <div align="center">
 <img height=50 src="./images/my_unsplash_logo.svg">
 </div>
