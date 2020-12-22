@@ -7,11 +7,13 @@
 ">
 </div>
 
+#
+
 <div align="center">
 <img height=50 src="./images/my_unsplash_logo.svg">
 </div>
 
----
+#
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
