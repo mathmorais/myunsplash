@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+.login-container {
+  display: flex !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
+.login-container img {
+  width: 200px;
+  margin-bottom: 35px;
+  height: 35px;
+}
+
+.login-container span {
+  margin-top: 20px;
+}
+
+.login-container .login-content {
+  transform: initial !important;
+}
+
+.login-container .login-content .confirm-buttons .confirm-button {
+  width: 160px !important;
+}
+
+nav {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .search-container {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  width: 50%;
+  min-width: 350px;
+}
+
+nav .search-container .logo-name {
+  width: 20vw;
+  margin-right: 15px;
+  max-width: 140px;
+  min-width: 100px;
+}
+
+nav .search-container .search-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bdbdbd;
+  position: relative;
+}
+
+nav .search-container .search-input input {
+  width: 100%;
+  height: 55px;
+  padding: 18px;
+  padding-left: 52px;
+  font-size: 14px;
+  border: 2px solid #bdbdbd;
+  border-radius: 12px;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+}
+
+nav .search-container .search-input input:focus {
+  border-color: #333333;
+}
+
+nav .search-container .search-input input:focus ~ i {
+  color: #333333;
+}
+
+nav .search-container .search-input i {
+  position: absolute;
+  left: 15px;
+}
+
+nav .add-container .confirm-button {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  width: 137px;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: #3db46d;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px 0;
+  width: 25vw;
+  box-shadow: 0px 4px 10px rgba(61, 180, 109, 0.2);
+  min-width: 150px;
+  max-width: 148px;
+}
+
+nav .add-container .confirm-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav .search-container {
+    width: 100%;
+    min-width: initial;
+  }
+  nav .search-container .search-input {
+    width: 100%;
+    min-width: initial;
+    margin: initial;
+  }
+  nav .search-container .search-input input {
+    width: 100%;
+  }
+  nav .add-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  nav .add-container .confirm-button {
+    max-width: initial;
+    width: 100%;
+    max-width: initial;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main .alert-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(32, 32, 32, 0.65);
+  padding: 20px;
+  width: 100%;
+  color: #ffffff;
+  align-self: center;
+  flex-direction: column;
+}
+
+main .alert-images-container i {
+  font-size: 4.1rem;
+  margin-bottom: 20px;
+}
+
+main .image-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+main .image-container .img-el {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 550px;
+  transition: background-size 0.35s ease, opacity 0.15s ease;
+}
+
+main .image-container .img-el:hover .img-overlay {
+  opacity: 1;
+}
+
+main .image-container .img-overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+  padding: 25px;
+  flex-direction: column;
+  background-color: rgba(3, 3, 3, 0.38);
+}
+
+main .image-container .img-overlay button, main .image-container .img-overlay .modal-container .modal-content .confirm-buttons button:last-of-type, .modal-container .modal-content .confirm-buttons main .image-container .img-overlay button:last-of-type, main .image-container .img-overlay .login-container .modal-content .confirm-buttons button:last-of-type, .login-container .modal-content .confirm-buttons main .image-container .img-overlay button:last-of-type, main .image-container .img-overlay .login-container .login-content .confirm-buttons button:last-of-type, .login-container .login-content .confirm-buttons main .image-container .img-overlay button:last-of-type {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  align-self: flex-end;
+  border: 2px solid #eb5757;
+  color: #eb5757;
+  border-radius: 38px;
+  padding: 3px 15px;
+  background: none;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+main .image-container .img-overlay button:hover, main .image-container .img-overlay .modal-container .modal-content .confirm-buttons button:hover:last-of-type, .modal-container .modal-content .confirm-buttons main .image-container .img-overlay button:hover:last-of-type, main .image-container .img-overlay .login-container .modal-content .confirm-buttons button:hover:last-of-type, .login-container .modal-content .confirm-buttons main .image-container .img-overlay button:hover:last-of-type, main .image-container .img-overlay .login-container .login-content .confirm-buttons button:hover:last-of-type, .login-container .login-content .confirm-buttons main .image-container .img-overlay button:hover:last-of-type {
+  background-color: #eb5757;
+  color: #ffffff;
+}
+
+main .image-container .img-overlay .label-content {
+  justify-self: flex-end;
+  max-height: 150px;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+main .image-container .img-overlay .label-content h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 25px;
+    height: initial;
+  }
+  main .image-container {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  }
+  main .image-container .img-el {
+    width: 100%;
+    min-width: initial;
+  }
+  main .image-container .img-el .img-overlay {
+    min-width: initial;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  main {
+    padding: 0 14px;
+  }
+}
+
+.modal-container, .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  flex-direction: column;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-container .modal-content, .login-container .modal-content, .modal-container .login-container .login-content, .login-container .modal-container .login-content, .login-container .login-content {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  padding: 24px 32px;
+  flex-direction: column;
+  width: 35%;
+  max-width: 670px;
+  min-width: 335px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-container .modal-content h1, .login-container .modal-content h1, .modal-container .login-container .login-content h1, .login-container .modal-container .login-content h1, .login-container .login-content h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.modal-container .modal-content .inputs-modal, .login-container .modal-content .inputs-modal, .modal-container .login-container .login-content .inputs-modal, .login-container .modal-container .login-content .inputs-modal, .login-container .login-content .inputs-modal, .login-container .login-content .inputs-login {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: column;
+}
+
+.modal-container .modal-content .inputs-modal label, .login-container .modal-content .inputs-modal label, .modal-container .login-container .login-content .inputs-modal label, .login-container .modal-container .login-content .inputs-modal label, .login-container .login-content .inputs-modal label, .login-container .login-content .inputs-login label {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+}
+
+.modal-container .modal-content .inputs-modal input, .login-container .modal-content .inputs-modal input, .modal-container .login-container .login-content .inputs-modal input, .login-container .modal-container .login-content .inputs-modal input, .login-container .login-content .inputs-modal input, .login-container .login-content .inputs-login input {
+  padding: 0 18px;
+  height: 50px;
+  border-radius: 12px;
+  border: 2px solid #bdbdbd;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.modal-container .modal-content .inputs-modal input:focus, .login-container .modal-content .inputs-modal input:focus, .login-container .login-content .inputs-modal input:focus, .login-container .login-content .inputs-login input:focus {
+  border: 2px solid #333333;
+}
+
+.modal-container .modal-content .confirm-buttons, .login-container .modal-content .confirm-buttons, .modal-container .login-container .login-content .confirm-buttons, .login-container .modal-container .login-content .confirm-buttons, .login-container .login-content .confirm-buttons {
+  align-self: flex-end;
+}
+
+.modal-container .modal-content .confirm-buttons button, .login-container .modal-content .confirm-buttons button, .modal-container .login-container .login-content .confirm-buttons button, .login-container .modal-container .login-content .confirm-buttons button, .login-container .login-content .confirm-buttons button, .modal-container .modal-content .confirm-buttons button:last-of-type, .login-container .modal-content .confirm-buttons button:last-of-type, .login-container .login-content .confirm-buttons button:last-of-type {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  border-radius: 12px;
+  background: none;
+  border: none;
+  color: #bdbdbd;
+  height: 50px;
+  width: 85px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+}
+
+.modal-container .modal-content .confirm-buttons button:hover, .login-container .modal-content .confirm-buttons button:hover, .login-container .login-content .confirm-buttons button:hover {
+  background-color: #bdbdbd;
+  color: #ffffff;
+}
+
+.modal-container .modal-content .confirm-buttons button:last-of-type, .login-container .modal-content .confirm-buttons button:last-of-type, .login-container .login-content .confirm-buttons button:last-of-type {
+  background: #3db46d;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(61, 180, 109, 0.2);
+  margin-left: 15px;
+  min-width: 60px;
+  max-width: 148px;
+}
+
+.modal-container .modal-content .confirm-buttons button:last-of-type:hover, .login-container .modal-content .confirm-buttons button:last-of-type:hover, .login-container .login-content .confirm-buttons button:last-of-type:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.show {
+  transform: translateY(0) !important;
+  pointer-events: all;
+  opacity: 1;
+}
+
+a {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 17.5px 0;
+  color: #ffffff;
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+footer a {
+  margin-left: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #bdbdbd;
+}
+
+footer .link-names {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .link-names p {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease, border 0.2s ease;
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+
+footer .link-names p:hover {
+  color: #bdbdbd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+/*# sourceMappingURL=root.css.map */

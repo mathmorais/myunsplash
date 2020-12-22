@@ -1,0 +1,102 @@
+@import "../scss/mixins";
+@import "../scss/vars";
+
+main {
+  width: 100%;
+  .alert-images-container {
+    @include d-flex(center, center);
+    background: rgba(32, 32, 32, 0.65);
+    padding: 20px;
+    width: 100%;
+    color: $colorWhite;
+    align-self: center;
+    flex-direction: column;
+    i {
+      font-size: $sizeLarge;
+      margin-bottom: 20px;
+    }
+  }
+  .image-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+    .img-el {
+      &:hover .img-overlay {
+        opacity: 1;
+      }
+      @include defaultBackground();
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 320px;
+      min-height: 550px;
+      transition: background-size 0.35s ease, opacity 0.15s ease;
+    }
+
+    .img-overlay {
+      @include d-flex(space-between, initial);
+      @include defaultTransition();
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      opacity: 0;
+      padding: 25px;
+      flex-direction: column;
+      background-color: rgba(3, 3, 3, 0.38);
+
+      button {
+        &:hover {
+          background-color: $colorRed;
+          color: $colorWhite;
+        }
+        @include defaultTransition();
+        @include defaultButton();
+        align-self: flex-end;
+        border: 2px solid $colorRed;
+        color: $colorRed;
+        border-radius: 38px;
+        padding: 3px 15px;
+        background: none;
+        font-size: $sizeXSmall;
+        font-weight: 500;
+      }
+      .label-content {
+        justify-self: flex-end;
+        max-height: 150px;
+        text-overflow: ellipsis;
+        color: $colorWhite;
+        h2 {
+          font-weight: 500;
+          font-size: $sizeMedium;
+          word-break: break-all;
+        }
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 25px;
+    height: initial;
+    .image-container {
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      .img-el {
+        width: 100%;
+        min-width: initial;
+        .img-overlay {
+          min-width: initial;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  main {
+    padding: 0 14px;
+  }
+}

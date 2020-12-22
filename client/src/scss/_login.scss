@@ -1,0 +1,29 @@
+@import "./mixins";
+@import "./vars";
+
+.login-container {
+  @extend .modal-container;
+  display: flex !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  img {
+    width: 200px;
+    margin-bottom: 35px;
+    height: 35px;
+  }
+  span {
+    margin-top: 20px;
+  }
+  .login-content {
+    transform: initial !important;
+    @extend .modal-content;
+    .inputs-login {
+      @extend .inputs-modal;
+    }
+    .confirm-buttons {
+      .confirm-button {
+        width: 160px !important;
+      }
+    }
+  }
+}

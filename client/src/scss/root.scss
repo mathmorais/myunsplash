@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import "./login";
+@import "./nav";
+@import "./main";
+@import "./modal";
+@import "./footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}

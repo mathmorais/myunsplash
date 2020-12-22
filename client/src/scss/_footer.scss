@@ -1,0 +1,41 @@
+@import "./mixins";
+@import "./vars";
+
+a {
+  text-decoration: underline;
+}
+
+footer {
+  @include d-flex(space-evenly, center);
+  width: 100%;
+  padding: 17.5px 0;
+  color: $colorWhite;
+  background-color: $colorBlack;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  h2 {
+    font-size: $sizeSmall;
+    font-weight: 500;
+  }
+  a {
+    margin-left: 5px;
+    @include defaultTransition();
+    &:hover {
+      color: $colorGray;
+    }
+    color: $colorWhite;
+  }
+  .link-names {
+    @include d-flex(space-evenly, center);
+
+    p {
+      @include defaultTransition();
+      &:hover {
+        color: $colorGray;
+      }
+      font-size: $sizeXSmall;
+      color: $colorWhite;
+    }
+  }
+}

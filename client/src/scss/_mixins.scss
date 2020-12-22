@@ -1,0 +1,18 @@
+@mixin d-flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin defaultBackground {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin defaultTransition() {
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease,
+    border 0.2s ease;
+}
+@mixin defaultButton() {
+  cursor: pointer;
+  outline: none;
+}

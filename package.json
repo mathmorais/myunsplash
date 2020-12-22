@@ -1,0 +1,22 @@
+{
+  "name": "myunsplash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client_init": "npm start --prefix client",
+    "server_init": "node server.js",
+    "dev_init": "concurrently \"npm run server_init\" \"npm run client_init\"",
+    "postinstall": "npm install --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
+}

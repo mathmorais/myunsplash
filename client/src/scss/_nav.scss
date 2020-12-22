@@ -1,0 +1,99 @@
+@import "../scss/mixins";
+@import "../scss/vars";
+
+nav {
+  padding: 40px 20px;
+  @include d-flex(space-between, center);
+  .search-container {
+    @include d-flex(initial, center);
+    width: 50%;
+    min-width: 350px;
+    .logo-name {
+      width: 20vw;
+      margin-right: 15px;
+      max-width: 140px;
+      min-width: 100px;
+    }
+    .search-input {
+      width: 100%;
+      @include d-flex(center, center);
+      color: $colorGray;
+      position: relative;
+      input {
+        &:focus {
+          border-color: $colorBlack;
+        }
+        &:focus ~ i {
+          color: $colorBlack;
+        }
+        width: 100%;
+        height: 55px;
+        padding: 18px;
+        padding-left: 52px;
+        font-size: 14px;
+        border: 2px solid $colorGray;
+        border-radius: 12px;
+        outline: none;
+        @include defaultTransition();
+      }
+      i {
+        position: absolute;
+        left: 15px;
+      }
+    }
+  }
+  .add-container {
+    .confirm-button {
+      &:hover {
+        background-color: $colorBlack;
+        color: $colorWhite;
+      }
+      @include defaultTransition();
+      @include defaultButton();
+      width: 137px;
+      height: 55px;
+      border: none;
+      border-radius: 12px;
+      background: $colorGreen;
+      color: $colorWhite;
+      font-size: $sizeSmall;
+      font-weight: bold;
+      padding: 15px 0;
+      width: 25vw;
+
+      box-shadow: 0px 4px 10px rgba(61, 180, 109, 0.2);
+
+      min-width: 150px;
+      max-width: 148px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    .search-container {
+      width: 100%;
+      min-width: initial;
+      .search-input {
+        width: 100%;
+        min-width: initial;
+        margin: initial;
+        input {
+          width: 100%;
+        }
+      }
+    }
+    .add-container {
+      @include d-flex(flex-end, center);
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+      .confirm-button {
+        max-width: initial;
+        width: 100%;
+        max-width: initial;
+      }
+    }
+  }
+}
