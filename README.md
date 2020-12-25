@@ -88,4 +88,4 @@ I don't know much about contributions on github but, if you find any issues, or 
 
 ## Contact
 
-- GitHub [@mathmorais](https://{github.com/mathmorais})
+- GitHub [@mathmorais](https://github.com/mathmorais)
