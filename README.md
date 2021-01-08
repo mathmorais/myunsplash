@@ -25,11 +25,11 @@
 ## 📝 Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+  - [About](#about)
+  - [Technologies](#technologys)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -45,7 +45,7 @@ In this project I learned and improved a lot, mainly, in the way I dealt with my
 
 This is my first React project here on github, I hope you like it :)
 
-### Technologies used
+### Technologies
 
 - [React](https://reactjs.org/)
 - [NodeJS](https://nodejs.org/en/)
@@ -53,10 +53,6 @@ This is my first React project here on github, I hope you like it :)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/)
 
-
-## Features
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
 **To do :**
 
@@ -74,15 +70,9 @@ $ git clone https://github.com/mathmorais/myunsplash
 # Install dependencies
 $ npm install
 
-# Run the app, do this command on root folder
+# Run the app
 $ npm run dev_init
 ```
-
-## Acknowledgements
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contribute
 
@@ -91,3 +81,4 @@ I don't know much about contributions on github but, if you find any issues, or 
 ## Contact
 
 - GitHub [@mathmorais](https://github.com/mathmorais)
+- Email [gm80648@gmail.com](mailto:gm80648@gmail.com)
