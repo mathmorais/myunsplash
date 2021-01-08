@@ -51,6 +51,8 @@ This is my first React project here on github, I hope you like it :)
 - [NodeJS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+
 
 ## Features
 
