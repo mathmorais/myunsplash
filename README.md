@@ -74,10 +74,6 @@ $ npm install
 $ npm run dev_init
 ```
 
-## Contribute
-
-I don't know much about contributions on github but, if you find any issues, or have a suggestion, I would love to know :)
-
 ## Contact
 
 - GitHub [@mathmorais](https://github.com/mathmorais)
