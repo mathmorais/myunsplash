@@ -1,19 +1,7 @@
 <div align="center">
-<img height=50 src="./images/my_unsplash_logo.svg">
-</div>
-
-#
-
-<div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
-</div>
-
-<div align="center">
-  <h3>
-    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
-      Challenge
-    </a>
-  </h3>
+   
+   # My unsplash
+   
 </div>
 
 <div align="center">
@@ -42,8 +30,6 @@ The project consists of a clone of the Unsplash photo site.
 In **My unsplash** you can register a personal gallery where you can add and remove photos through Urls of photos from the Unsplash website
 
 In this project I learned and improved a lot, mainly, in the way I dealt with my APIs.
-
-This is my first React project here on github, I hope you like it :)
 
 ### Technologies
 
